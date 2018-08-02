@@ -67,6 +67,11 @@ namespace 灵动小桌
                     lose = true;
                 }
             }
+            else
+            {
+                ResetImage();
+                lose = false;
+            }
 
             // 读取启动配置文件中的高度和宽度，并设置
             string width = Tools.WinProfile.ProfileReadValue("WidthAndHeight", "Width", Tools.WinProfile.CONFIG_FILE_PATH);
