@@ -37,7 +37,6 @@ namespace 灵动小桌
             picHeight = mainWindow.defaultPicHeight;
             int max = (picWidth > picHeight) ? picWidth : picHeight;
             trackBar1.Maximum = max;
-            MessageBox.Show(picWidth + ", " + picHeight + ", " + max);
             trackBar1.Value = mainWindow.cursor;
         }
 
